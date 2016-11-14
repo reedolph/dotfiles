@@ -1,0 +1,30 @@
+[color]
+	ui = auto
+
+[commit]
+	template = ~/.gitmessage
+
+[fetch]
+	prune = true
+
+[help]
+	autocorrect = 1
+
+[include]
+	path = ~/.gitconfig.local
+
+[push]
+	default = current
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+	insteadOf = "git://github.com"
+	insteadOf = "https://github.com/"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+	pushInsteadOf = "https://github.com/"
+[url "git@gist.github.com:"]
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+	pushInsteadOf = "https://gist.github.com/"

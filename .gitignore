@@ -1,0 +1,17 @@
+# Git credentials
+.gitconfig.local
+
+# Node.js modules folder
+node_modules
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Compiled Python files
+*.pyc
+

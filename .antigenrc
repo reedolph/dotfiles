@@ -1,0 +1,39 @@
+ANTIGEN_DIR="${HOME}/.antigen"
+if [ ! -d "${ANTIGEN_DIR}/.git" ]; then
+	git clone https://github.com/zsh-users/antigen "${ANTIGEN_DIR}"
+fi
+. "${ANTIGEN_DIR}/antigen.zsh"
+
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+colorize
+command-not-found
+common-aliases
+cp
+dirpersist
+docker
+docker-compose
+extract
+gitfast
+git-extras
+github
+httpie
+npm
+nvm
+pip
+sudo
+
+marzocchi/zsh-notify
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+
+joel-porquet/zsh-dircolors-solarized
+zlsun/solarized-man
+
+unixorn/autoupdate-antigen.zshplugin
+EOBUNDLES
+
+antigen theme bhilburn/powerlevel9k powerlevel9k
+
+antigen apply
