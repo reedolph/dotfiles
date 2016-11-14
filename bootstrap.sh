@@ -25,6 +25,7 @@ FILES="$(find "${SCRIPT_DIR}/" \
 	\( -type f -o -type l \) \
 	! -path '*/.git/*' \
 	! -name "${SCRIPT_FILENAME}" \
+	! -name ".gitmodules" \
 	-print
 )"
 
