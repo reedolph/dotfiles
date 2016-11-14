@@ -1,8 +1,4 @@
-ANTIGEN_DIR="${HOME}/.antigen"
-if [ ! -d "${ANTIGEN_DIR}/.git" ]; then
-	git clone https://github.com/zsh-users/antigen "${ANTIGEN_DIR}"
-fi
-. "${ANTIGEN_DIR}/antigen.zsh"
+. "${HOME}/.zsh-antigen/antigen.zsh"
 
 antigen use oh-my-zsh
 
