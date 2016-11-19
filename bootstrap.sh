@@ -25,13 +25,21 @@ FILES="$(find "${SCRIPT_DIR}/" \
 	\( -type f -o -type l \) \
 	! -path '*/.git/*' \
 	! -name "${SCRIPT_FILENAME}" \
-	! -name ".gitmodules" \
 	-print
 )"
 
 really_bootstrap() {
 	mkdir -p "${BACKUP_DIR}"
 
+	# Get Antigen
+	if [ -h "${HOME}/.zsh-antigen" ]; then
+		rm -rf "${HOME}/.zsh-antigen"
+	elif [ -d "${HOME}/.zsh-antigen" ]; then
+		mv -f "${HOME}/.zsh-antigen" "${BACKUP_DIR}/.zsh-antigen"
+	fi
+	git clone "https://github.com/zsh-users/antigen.git" "${HOME}/.zsh-antigen"
+
+	# Get the dotfiles
 	for FILE in ${FILES}; do
 
 		# Get the relative path to the file
