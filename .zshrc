@@ -7,8 +7,8 @@ function start_agent {
     /usr/bin/ssh-add
 }
 
-# Use ssh-agent only for Windows and remote boxes
-if [ -z "${DESKTOP_SESSION}" ]; then
+# Use ssh-agent only for WSL
+if grep -q "Microsoft" /proc/version; then
 	# Set up ssh-agent
 	SSH_ENV="$HOME/.ssh/environment"
 
