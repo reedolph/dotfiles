@@ -2,6 +2,9 @@
 POWERLEVEL9K_INSTALLATION_PATH="${HOME}/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-bhilburn-SLASH-powerlevel9k.git/powerlevel9k.zsh-theme"
 ZSH_CACHE_DIR="/home/jaakko/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/cache/"
 autoload -Uz is-at-least
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 # Antigen
 . "${HOME}/.antigenrc"
