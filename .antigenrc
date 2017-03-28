@@ -5,7 +5,6 @@ antigen use oh-my-zsh
 antigen bundles <<EOBUNDLES
 colorize
 command-not-found
-common-aliases
 cp
 dirpersist
 docker
@@ -20,7 +19,6 @@ nvm
 pip
 sudo
 
-marzocchi/zsh-notify
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
 
