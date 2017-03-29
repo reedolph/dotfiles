@@ -35,6 +35,7 @@ really_bootstrap() {
 	if [ -h "${HOME}/.zsh-antigen" ]; then
 		rm -rf "${HOME}/.zsh-antigen"
 	elif [ -d "${HOME}/.zsh-antigen" ]; then
+		rm -rf "${BACKUP_DIR}/.zsh-antigen"
 		mv -f "${HOME}/.zsh-antigen" "${BACKUP_DIR}/.zsh-antigen"
 	fi
 	git clone "https://github.com/zsh-users/antigen.git" "${HOME}/.zsh-antigen"
