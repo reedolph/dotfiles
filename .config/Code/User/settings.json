@@ -1,10 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
+	// Controls CSS validation and problem severities.
+	// Enables or disables all validations
+	"stylelint.enable": true,
+	"css.validate": false,
+
 	// When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
 	"editor.detectIndentation": false,
-
-	// Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
-	"editor.formatOnSave": false,
 
 	// Insert spaces when pressing Tab. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
 	"editor.insertSpaces": false,
@@ -22,7 +24,9 @@
 	"editor.tabCompletion": true,
 
 	// Define profile for specified syntax or use your own profile with specific rules.
-	"emmet.syntaxProfiles": { "javascript": "jsx" },
+	"emmet.syntaxProfiles": {
+		"javascript": "jsx"
+	},
 
 	// Automatically update extensions
 	"extensions.autoUpdate": false,
@@ -42,4 +46,17 @@
 
 	// Controls how folders are being reopened after a restart. Select 'none' to never reopen a folder, 'one' to reopen the last folder you worked on or 'all' to reopen all folders of your last session.
 	"window.reopenFolders": "none",
+
+	"workbench.colorTheme": "Braver's Solarized Dark",
+
+	"sync.gist": "f7700f7ee30ebb6d01ccebc492a4fff7",
+	"sync.lastUpload": "",
+	"sync.autoDownload": true,
+	"sync.autoUpload": true,
+	"sync.lastDownload": "2017-06-06T13:47:54.758Z",
+	"sync.forceDownload": false,
+	"sync.anonymousGist": false,
+	"sync.host": "",
+	"sync.pathPrefix": "",
+	"sync.quietSync": false,
 }
