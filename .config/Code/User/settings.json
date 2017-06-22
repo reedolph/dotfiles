@@ -5,6 +5,15 @@
 	"stylelint.enable": true,
 	"css.validate": false,
 
+	// Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+	"editor.formatOnSave": false,
+
+	// Controls if the editor should automatically format the line after typing
+	"editor.formatOnType": false,
+
+	// Controls if the editor should automatically format the pasted content. A formatter must be available and the formatter should be able to format a range in a document.
+	"editor.formatOnPaste": false,
+
 	// When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
 	"editor.detectIndentation": false,
 
@@ -59,4 +68,7 @@
 	"sync.host": "",
 	"sync.pathPrefix": "",
 	"sync.quietSync": false,
+
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true
 }
