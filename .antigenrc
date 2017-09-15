@@ -1,5 +1,6 @@
 # Workaround for Powerlevel9k
-POWERLEVEL9K_INSTALLATION_PATH="${HOME}/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-bhilburn-SLASH-powerlevel9k.git"
+export ANTIGEN_BUNDLES="$HOME/.antigen/bundles"
+export POWERLEVEL9K_INSTALLATION_PATH="$ANTIGEN_BUNDLES/bhilburn/powerlevel9k/powerlevel9k.zsh-theme"
 
 # Workaround for npm completion plugin
 ZSH_CACHE_DIR="${HOME}/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/cache/"
