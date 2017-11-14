@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Synaptics
-Comment=Setup and launch Synaptics
-Exec=synclient HorizTwoFingerScroll=1 VertScrollDelta=-111 HorizScrollDelta=-111 AccelFactor=0.1028806 MinSpeed=1.5 MaxSpeed=2.5 VertEdgeScroll=0
